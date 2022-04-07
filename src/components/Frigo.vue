@@ -140,10 +140,12 @@ onMounted(()=>{
 
 
 <template>
-<h3>Mon frigo</h3>
-    <FrigoForm @addA="handlerAdd" @searchA="handlerSearch"></FrigoForm>
+<h1>Mon frigo</h1>
+    <div class="formulaire"><FrigoForm @addA="handlerAdd" @searchA="handlerSearch"></FrigoForm></div>
 
+<div class="barreFrigo"></div>
 
+<div class="contenu">
 <ul>
     <FrigoItem v-for="(aliment, index) in listeA" 
         :key="aliment.id"
@@ -154,5 +156,57 @@ onMounted(()=>{
         @moinsUnA="handlerMoinsUn"
     ></FrigoItem>
 </ul>
-
+</div>
 </template>
+
+<style scoped>
+    p{
+        font-family: "Brush Script MT", "Brush Script Std", "cursive";
+    }
+
+    h1{
+        font-family: "Brush Script MT", "Brush Script Std", "cursive";
+        font-size : 45px;
+        text-align : center;
+    }
+
+    .formulaire, .contenu {
+        background-color: #EEE2DF;
+        position: relative;
+        width: 170px;
+        min-height: 300px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 1px 10px;
+        border-style: inset;
+        width: 250px;
+        height: 400px;
+    }
+
+    .formulaire{
+        position: fixed;
+        top: 170px;
+        left:625px;
+    }
+
+    .contenu{
+        position: fixed;
+        top: 170px;
+        left:900px;
+    }
+
+    .barreFrigo{
+        background-color: hsl(18, 15%, 57%);
+        position: fixed;
+        
+        
+        padding: 1px 10px;
+        
+        height: 403px;
+        top: 170px;
+        left:890px;
+    }
+
+
+</style>

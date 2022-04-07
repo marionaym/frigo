@@ -21,6 +21,6 @@ export default class Aliment {
     }
     
     pourAfficher() {
-    return `--> ${this._nom} (${ this._quantite})`;
+    return `${this._nom} (${ this._quantite})`;
     }
    }
