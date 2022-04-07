@@ -180,32 +180,29 @@ onMounted(()=>{
         border-radius: 10px;
         padding: 1px 10px;
         border-style: inset;
-        width: 250px;
-        height: 400px;
+        width: 200px;
+        height: 350px;
     }
 
     .formulaire{
         position: fixed;
-        top: 170px;
-        left:625px;
+        top: 110px;
+        left:400px;
     }
 
     .contenu{
         position: fixed;
-        top: 170px;
-        left:900px;
+        top: 110px;
+        left:630px;
     }
 
     .barreFrigo{
         background-color: hsl(18, 15%, 57%);
         position: fixed;
-        
-        
         padding: 1px 10px;
-        
-        height: 403px;
-        top: 170px;
-        left:890px;
+        height: 352px;
+        top: 111px;
+        left:624px;
     }
 
 
